@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Você é estrangeiro para mim?</h1>
+
+   <p>Seu país é?
+        <input type="text" name="txtg"            id="txtg"><input type="button" value="verificar" onclick="identificar()">
+    </p> 
+
+<div id="res">
+você é:
+</div>
+<script>
+
+function  identificar() {
+    var txtg = window.document.getElementById('txtg').value
+    var res = 'Gringo'
+    var res2 = window.document.getElementById('res')
+    //var país = txtg.value  
+
+    
+    if(txtg === 'Brasil' ) {
+        res2.innerHTML = `<p> <strong> Você é malandro!</strong> </p>`
+    } else{
+        res2.innerHTML = `<p> <strong> Você é ${res}! </strong> </p>`
+    }
+
+
+    }
+
+</script>
+</body>
+</html>
