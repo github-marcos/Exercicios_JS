@@ -13,5 +13,5 @@ for(let pos=0; pos< valores.length; pos++){
 */
 
 for(let pos in valores){
-    console.log(`aposição ${pos} tem o valor ${valores[pos]}`)
+    console.log(`a posição ${pos} tem o valor ${valores[pos]}`)
 }
