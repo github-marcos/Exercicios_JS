@@ -35,7 +35,7 @@ function adicionar() {
 
     function finalizar() {
         if(valores.length == 0){
-            window.alert('adicione valores a tes de finalizar!')
+            window.alert('adicione valores antes de finalizar!')
         }else{
             let tot = valores.length
             let maior = valores[0]
@@ -43,6 +43,7 @@ function adicionar() {
             let soma = 0
             let media = 0
             for (let pos in valores){
+                soma += valores[pos]
             if (valores[pos] > maior)
                 maior = valores[pos]
             if (valores[pos] < menor)
@@ -50,10 +51,10 @@ function adicionar() {
             }
             media = soma / tot
             res.innerHTML = ''
-            res.innerHTML += `<p> Ao todo, temos ${tot} números cadastrados</p><br>.`
+            res.innerHTML += `<h3> Ao todo, temos ${tot} números cadastrados</h3><br>.`
             res.innerHTML += `<p> O maior valor informado foi ${maior}</p><br>`
-            res.innerHTML += `<p> </p>O menor valor informado foi ${menor}</p><br>`
-            res.innerHTML += `<p> Somando todos os valores, temos ${soma}. </p><br>`
+            res.innerHTML += `<p> O menor valor informado foi ${menor}</p><br>`
+            res.innerHTML += `<p> Somando todos os valores, temos ${soma}.</p><br>`
             res.innerHTML += `A média dos valores digitados é ${media}.</p><br>`
         }
     }
