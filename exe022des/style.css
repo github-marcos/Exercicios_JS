@@ -28,6 +28,10 @@ div{
     display: flex;
 }
 
+div#res{
+margin: auto;
+}
+
 h2{
     margin: 30px 15px ;
 }
