@@ -51,11 +51,11 @@ function adicionar() {
             }
             media = soma / tot
             res.innerHTML = ''
-            res.innerHTML += `<h3> Ao todo, temos <mark>${tot}</mark> números cadastrados</h3>.`
+            res.innerHTML += `<h3> Ao todo, temos <mark>${tot}</mark> números cadastrados</h3>`
             res.innerHTML += `<h3> O maior valor informado foi <mark>${maior}</mark></h3>`
             res.innerHTML += `<h3> O menor valor informado foi <mark>${menor}</mark></h3>`
-            res.innerHTML += `<h3> Somando todos os valores, temos<mark> ${soma}</mark>.</h3>`
-            res.innerHTML += `<h3> A média dos valores digitados é <mark>${media}</mark>.</h3><br>`
+            res.innerHTML += `<h3> Somando todos os valores, temos<mark> ${soma}</mark></h3>`
+            res.innerHTML += `<h3> A média dos valores digitados é <mark>${media}</mark></h3><br>`
         }
     }
  
