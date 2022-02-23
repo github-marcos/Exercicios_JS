@@ -19,7 +19,7 @@ section{
     box-shadow: 3px 7px  black;
 }
 
-div{
+div#d1{
     margin-left: 12px;
     /*border: 1px solid black;*/
     height: 80px;
@@ -29,7 +29,8 @@ div{
 }
 
 div#res{
-margin: auto;
+margin-left: 15px;
+min-height: 150px;
 }
 
 h2{
